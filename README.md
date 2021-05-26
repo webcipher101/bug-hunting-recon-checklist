@@ -11,3 +11,5 @@ cd bug-hunting-recon-checklist
 chmod +x start-checklist.sh
 
 ./start-checklist.sh
+
+append your browser screen in full size.
