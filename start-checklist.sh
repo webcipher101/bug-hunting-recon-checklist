@@ -1,6 +1,6 @@
 #!/bin/bash
 
 figlet recon-checklist
-echo "by : @webcipher"
+echo "by : @webcipher101"
 
-firefox /home/webcipher/coding/web/checklist/index.html
+firefox /home/webcipher/checklist/index.html
