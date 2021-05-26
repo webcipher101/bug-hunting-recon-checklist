@@ -16,6 +16,7 @@ cd bug-hunting-recon-checklist
 >> final command in start-checklist.sh > firefox /home/user/Desktop/bug-hunting-recon-checklist/index.html ,and click on save file.
 
 >> in terminal :-
+ 
 chmod +x start-checklist.sh
 
 ./start-checklist.sh
