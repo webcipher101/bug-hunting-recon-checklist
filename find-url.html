@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>recon checklist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <script src="bg.js"></script>
+      <h1>FIND URL & DIRECTORY :-</h1>
+
+      <div class="group">
+        <input type="checkbox" id="dirsearch" />
+        <label for="dirsearch">python3 dirsearch.py -u target.com ---> [ find directories ] <a href="https://github.com/maurosoria/dirsearch">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="jsfinder" />
+        <label for="jsfinder">python3 JSFinder.py -u target.com ---> [ find urls from js files ] <a href="https://github.com/Threezh1/JSFinder">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="linkfinder" />
+        <label for="linkfinder">python linkfinder.py -i target.com ---> [ find parameters and endpoints in js file ] <a href="https://github.com/GerbenJavado/LinkFinder">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="paramspider" />
+        <label for="paramspider">python3 paramspider.py -d target.com ---> [ find parameters ] <a href="https://github.com/devanshbatham/ParamSpider">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="photon" />
+        <label for="photon">photon -u target.com ---> [ fast crawler ] <a href="https://github.com/s0md3v/Photon">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="waybackurls" />
+        <label for="waybackurls">waybackurls target.com ---> [ fetch urls  ] <a href="https://github.com/tomnomnom/waybackurls">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="arjun" />
+        <label for="arjun">arjun -u target.com ---> [ find hidden parameters ] <a href="https://github.com/s0md3v/Arjun">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="virustotal" />
+        <label for="virustotal">virustotal.com ---> [ find external url links ] <a href="https://www.virustotal.com">open</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="retire.js" />
+        <label for="retire.js">use burpsuite sitemap or retire.js extension ---> [ use more extensions to find more links or parameters ] <a href="https://portswigger.net/burp/documentation">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="done" />
+        <label for="done">recon done ---> [ ALL-DONE ]</label>
+      </div><br>
+
+      <button onclick="document.location='index.html'" >BACK TO HOME</button>
+      <br>
+      @webcipher
+
+    </div>
+  </body>
+</html>

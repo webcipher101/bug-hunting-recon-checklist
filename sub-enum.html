@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sub checklist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <script src="bg.js"></script>
+      <h1>SUBDOMAIN - ENUM :-</h1>
+
+
+      <div class="group">
+        <input type="checkbox" id="shodan.io" />
+        <label for="shodan.io">shodan.io ---> [ find subdomains and ip addresses or more ..! ] <a href="https://www.shodan.io/">open</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="censys.io" />
+        <label for="censys.io">censys.io ---> [ find subdomains and ip adresses or more ..! ] <a href="http://www.censys.io">open</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="amass" />
+        <label for="amass">amass enum -d target.com ---> [ find subdomains ]<a href="https://github.com/OWASP/Amass">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="findomain" />
+        <label for="findomain">findomain -t target.com ---> [ find subdomains ] <a href="https://github.com/Findomain/Findomain">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="sublist3r" />
+        <label for="sublist3r">python3 sublist3r.py -d target.com ---> [ find subdomains ] <a href="https://github.com/aboul3la/Sublist3r">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="assetfinder" />
+        <label for="assetfinder">assetfinder -subs-only target.com ---> [ find subdomains ] <a href="https://github.com/tomnomnom/assetfinder">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="subfinder" />
+        <label for="subfinder">subfinder -d target.com ---> [ find subdomains ] <a href="https://github.com/projectdiscovery/subfinder">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="knockpy" />
+        <label for="knockpy">knockpy target.com ---> [ find subdomains ] <a href="https://github.com/guelfoweb/knock">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="Hostilesubbruteforce" />
+        <label for="Hostilesubbruteforce">use Hostilesubbruteforce ---> [ find subdomains ] <a href="https://github.com/nahamsec/HostileSubBruteforcer">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="subburte" />
+        <label for="subburte">python3 subburte.py -t target.com ---> [ find subdomains ] <a href="https://github.com/TheRook/subbrute">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="sort" />
+        <label for="sort">sort subdomains.txt | uniq | tee valid-subdomains.txt ---> [ remove duplicates ]</label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="aquatone" />
+        <label for="aquatone">cat valid-subdomains.txt | aquatone -out foldername ---> [ use aquatone for screen shots ] <a href="https://github.com/michenriksen/aquatone">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="subzy" />
+        <label for="subzy">use tools subzy,sub404,takeover ---> [ check subdomain takeover ] <a href="https://github.com/LukaSikic/subzy">subzy</a> <a href="https://github.com/r3curs1v3-pr0xy/sub404">sub404</a> <a href="https://github.com/m4ll0k/takeover">takeover</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="httpx" />
+        <label for="httpx">cat valid-subdomains.txt | httpx -title -content-length -status-code ---> [ for check status ] <a href="https://github.com/projectdiscovery/httpx">more-info</a></label>
+      </div>
+
+      <h1>FIND URL & DIRECTORY :- </h1>
+
+      <div class="group">
+        <input type="checkbox" id="find url" />
+        <label for="find url"> now find url ---> [ <a href="find-url.html">FIND-URL & DIR</a> ] or [ <a href="index.html">HOME</a> ] </label>
+      </div>
+
+    </div>
+  </body>
+</html>

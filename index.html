@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>recon checklist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <script src="bg.js"></script>
+      
+      <h1>RECON :-</h1>
+ 
+
+      <div class="group">
+        <input type="checkbox" id="ping" />
+        <label for="ping">ping target.com ---> [ check domain is live or not ]</label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="nmap" />
+        <label for="nmap">nmap -sC -sV -oA  target ---> [ find open ports ] <a href="https://nmap.org/">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="ssl" />
+        <label for="ssl">sslscan 0.0.0.1  ---> [ to find heartbleed vulnerability ] <a href="https://heartbleed.com/">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="whois" />
+        <label for="whois">whois target.com ---> [ for more info about target domain ] <a href="https://www.whois.com/whois/">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="nslookup" />
+        <label for="nslookup">nslookup target.com ---> [ to check DNS record ] <a href="https://www.nslookup.io/">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="theHarvester" />
+        <label for="theHarvester">theHarvester -d target.com ---> [ find emails , hosts , IP  ] <a href="https://tools.kali.org/information-gathering/theharvester">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="maltego" />
+        <label for="maltego">maltego ---> [ information gathering using OSINT ] <a href="https://www.maltego.com/">more-info</a></label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="nikto" />
+        <label for="nikto">nikto -host target.com ---> [ find vulnerability ] <a href="https://tools.kali.org/information-gathering/nikto">more-info</a></label>
+      </div>
+
+      <h1>SUBDOMAIN ENUMERATION :-</h1>
+
+      <div class="group">
+        <input type="checkbox" id="sub-enum" />
+        <label for="sub-enum">subdomain-enumeration ---> [ <a href="sub-enum.html">SUBDOMAIN-ENUM</a> ]</label>
+      </div>
+
+      <h1>URL | PARAMETERS | DIRECTORY ENUMERATION :-</h1>
+      
+      <div class="group">
+        <input type="checkbox" id="find-url-checklist" />
+        <label for="find-url-checklist">find-url & directory-checklist ---> [ <a href="find-url.html">FIND-URL & DIR</a> ]</label>
+      </div>
+      
+
+      <br>
+      @webcipher
+
+    </div>
+  </body>
+</html>
