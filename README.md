@@ -7,6 +7,7 @@ git clone https://github.com/webcipher101/bug-hunting-recon-checklist.git
 cd bug-hunting-recon-checklist
 
 >> now open start-checklist.sh in editor > here add your browser name or directory path.
+>> demo path:- /home/user/Desktop/bug-hunting-recon-checklist/index.html
 
 chmod +x start-checklist.sh
 
