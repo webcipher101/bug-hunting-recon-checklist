@@ -1,7 +1,7 @@
 # bug-hunting-recon-checklist by webcipher
 <a href="https://twitter.com/webcipher101?s=09">@webcipher101</a>
 ![](demo.png)
-easy to use and understand (bigginers friendly)
+easy to use and understand (beginners friendly)
 
 >> in terminal :-
 
