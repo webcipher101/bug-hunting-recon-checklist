@@ -1,6 +1,6 @@
 #!/bin/bash
 
-figlet recon-checklist
-echo "by : @webcipher101"
+figlet -f slant.tlf "#recon-checklist"
+echo -e "\e[33m by: @ WebCipher101"
 
-firefox /home/webcipher/checklist/index.html
+sensible-browser /home/webcipher/checklist/index.html
