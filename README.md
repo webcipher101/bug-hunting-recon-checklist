@@ -5,7 +5,7 @@ A simple and easy to understand html+css+bash script for recon :)
 >>> by : webcipher101
 >>> recon-checklist for bug hunting
 
->>> if you have any issue about tool dm me on twitter :- <a href="https://twitter.com/webcipher101?s=09">link</a>
+>>> if you have any issue about checklist dm me on twitter :- <a href="https://twitter.com/webcipher101?s=09">link</a>
 
 
 >>> checkout my recon-map to automate your recon task :- <a href="https://">link</a>
